@@ -7,8 +7,9 @@
 }
 
 html {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient() */
   background: linear-gradient(#af67e9, #6565e7);
-  min-height: 100%;
+  /* min-height: 100%; */
 }
 
 body {
@@ -17,12 +18,12 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
-#faq {
+.faq {
   width: 65%;
   min-height: 450px;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.3); /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
@@ -32,55 +33,34 @@ main {
   border-radius: 30px;
 }
 
-#faq .logo {
+.faq .ilustracao {
   position: relative;
   left: -120px;
   width: 50%;
   margin: 50px 0;
 }
 
-#faq .content {
+.faq .conteudo {
   width: 40%;
   padding-bottom: 20px;
 }
 
-#faq .content h1 {
+.faq .conteudo h1 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
-#faq .items {
+.faq .items {
   list-style-type: none;
 }
 
-#faq .items .item {
+.faq .items .item {
   cursor: pointer;
-  background-image: url(./imagens/icone-seta-pra-baixo.png);
+  background-image: url(../imagens/icone-seta-pra-baixo.png);
   background-repeat: no-repeat;
   background-position: top 8px right 0;
   background-size: 12px;
   border-bottom: 1px solid #ccc;
   margin: 10px 0;
-}
-
-#faq .items .item:last-child {
-  border-bottom: none;
-}
-
-#faq .items .item .question {
-  padding-bottom: 15px;
-  transition: 0.2s ease;
-  font-size: 18px;
-  width: 90%;
-}
-
-#faq .items .item .question:hover {
-  color: #f47c57;
-}
-
-#faq .items .item .answer {
-  display: none;
-  padding-bottom: 15px;
-  font-size: 12px;
 }
