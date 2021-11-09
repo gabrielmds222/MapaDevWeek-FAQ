@@ -12,5 +12,19 @@ body {
   background: linear-gradient(#af67e9, #6565e7);
 }
 
-/* main {
-} */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#faq {
+  width: 65%;
+  min-height: 450px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+}
