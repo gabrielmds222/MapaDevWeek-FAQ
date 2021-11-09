@@ -84,3 +84,42 @@ main {
   padding-bottom: 15px;
   font-size: 12px;
 }
+
+/* Responsividade da aplicação */
+
+@media (max-width: 1140px) {
+  #faq {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #faq .content {
+    width: 100%;
+  }
+
+  #faq .content h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #faq .items {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #faq .items .question {
+    font-size: 16px;
+  }
+
+  #faq .logo {
+    width: 40%;
+    left: 0;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  #faq {
+    height: 540px;
+  }
+}
