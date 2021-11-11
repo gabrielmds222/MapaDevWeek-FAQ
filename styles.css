@@ -85,6 +85,20 @@ main {
   font-size: 12px;
 }
 
+/* Items ativos */
+
+#faq .items .item.active h2 {
+  font-weight: 700;
+}
+
+#faq .items .item.active .answer {
+  display: block;
+}
+
+#faq .items .item.active {
+  background-image: url(./imagens/icone-seta-pra-cima.png);
+}
+
 /* Responsividade da aplicação */
 
 @media (max-width: 1140px) {
